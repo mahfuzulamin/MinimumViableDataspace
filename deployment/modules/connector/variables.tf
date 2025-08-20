@@ -54,7 +54,7 @@ variable "ports" {
   default = {
     web        = 8080
     management = 8081
-    protocol   = 8082
+    protocol   = 9082
     control    = 8083
     catalog    = 8084
     debug      = 1044
