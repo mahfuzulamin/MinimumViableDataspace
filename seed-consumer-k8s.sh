@@ -24,7 +24,7 @@ API_KEY="c3VwZXItdXNlcg==.c3VwZXItc2VjcmV0LWtleQo="
 echo
 echo
 echo "Create consumer participant context in IdentityHub"
-CONSUMER_CONTROLPLANE_SERVICE_URL="http://consumer-controlplane:8082"
+CONSUMER_CONTROLPLANE_SERVICE_URL="http://consumer-controlplane:9082"
 CONSUMER_IDENTITYHUB_URL="http://consumer-identityhub:7082"
 DATA_CONSUMER=$(jq -n --arg url "$CONSUMER_CONTROLPLANE_SERVICE_URL" --arg ihurl "$CONSUMER_IDENTITYHUB_URL" '{
            "roles":[],
