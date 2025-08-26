@@ -18,7 +18,7 @@
 #
 
 variable "consumer-did" {
-  default = "did:web:consumer-identityhub%3A7083:consumer"
+  default = "did:web:consumer2-identityhub%3A7083:consumer2"
 }
 
 variable "provider-did" {

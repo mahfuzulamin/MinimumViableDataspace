@@ -1,4 +1,5 @@
 {
   "consumer-corp": "did:web:consumer-identityhub%3A7083:consumer",
+  "consumer2-corp": "did:web:consumer2-identityhub%3A7083:consumer2",
   "provider-corp": "did:web:provider-identityhub%3A7083:provider"
 }

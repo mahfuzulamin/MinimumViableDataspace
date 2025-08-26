@@ -41,11 +41,11 @@ DATA_CONSUMER=$(jq -n --arg url "$CONSUMER_CONTROLPLANE_SERVICE_URL" --arg ihurl
              }
            ],
            "active": true,
-           "participantId": "did:web:consumer-identityhub%3A7083:consumer",
-           "did": "did:web:consumer-identityhub%3A7083:consumer",
+           "participantId": "did:web:consumer2-identityhub%3A7083:consumer2",
+           "did": "did:web:consumer2-identityhub%3A7083:consumer2",
            "key":{
-               "keyId": "did:web:consumer-identityhub%3A7083:consumer#key-1",
-               "privateKeyAlias": "did:web:consumer-identityhub%3A7083:consumer#key-1",
+               "keyId": "did:web:consumer2-identityhub%3A7083:consumer2#key-1",
+               "privateKeyAlias": "did:web:consumer2-identityhub%3A7083:consumer2#key-1",
                "keyGeneratorParams":{
                   "algorithm": "EC"
                }
