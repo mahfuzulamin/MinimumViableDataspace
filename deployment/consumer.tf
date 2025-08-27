@@ -17,7 +17,7 @@
 # consumer connector
 module "consumer-connector" {
   source            = "./modules/connector"
-  humanReadableName = "consumer"
+  humanReadableName = "consumer2"
   participantId     = var.consumer-did
   database = {
     user     = "consumer"
@@ -26,7 +26,7 @@ module "consumer-connector" {
   }
   vault-url     = "http://consumer-vault:8200"
   namespace     = kubernetes_namespace.ns.metadata.0.name
-  sts-token-url = "${module.consumer-identityhub.sts-token-url}/token"
+  sts-token-url = "${module.consumer2-identityhub.sts-token-url}/token"
   useSVE        = var.useSVE
 }
 
@@ -35,7 +35,7 @@ module "consumer-identityhub" {
   depends_on        = [module.consumer-vault]
   source            = "./modules/identity-hub"
   credentials-dir   = dirname("./assets/credentials/k8s/consumer/")
-  humanReadableName = "consumer-identityhub"
+  humanReadableName = "consumer2-identityhub"
   participantId     = var.consumer-did
   vault-url         = "http://consumer-vault:8200"
   service-name      = "consumer"
