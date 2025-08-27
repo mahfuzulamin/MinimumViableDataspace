@@ -26,7 +26,7 @@ module "consumer-connector" {
   }
   vault-url     = "http://consumer-vault:8200"
   namespace     = kubernetes_namespace.ns.metadata.0.name
-  sts-token-url = "${module.consumer2-identityhub.sts-token-url}/token"
+  sts-token-url = "${module.consumer-identityhub.sts-token-url}/token"
   useSVE        = var.useSVE
 }
 
