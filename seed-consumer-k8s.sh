@@ -24,14 +24,14 @@ API_KEY="c3VwZXItdXNlcg==.c3VwZXItc2VjcmV0LWtleQo="
 echo
 echo
 echo "Create consumer participant context in IdentityHub"
-CONSUMER_CONTROLPLANE_SERVICE_URL="http://consumer-controlplane:9082"
-CONSUMER_IDENTITYHUB_URL="http://consumer-identityhub:7082"
+CONSUMER_CONTROLPLANE_SERVICE_URL="http://consumer2-controlplane:9082"
+CONSUMER_IDENTITYHUB_URL="http://consumer2-identityhub:7082"
 DATA_CONSUMER=$(jq -n --arg url "$CONSUMER_CONTROLPLANE_SERVICE_URL" --arg ihurl "$CONSUMER_IDENTITYHUB_URL" '{
            "roles":[],
            "serviceEndpoints":[
              {
                 "type": "CredentialService",
-                "serviceEndpoint": "\($ihurl)/api/credentials/v1/participants/ZGlkOndlYjpjb25zdW1lci1pZGVudGl0eWh1YiUzQTcwODM6Y29uc3VtZXI=",
+                "serviceEndpoint": "\($ihurl)/api/credentials/v1/participants/ZGlkOndlYjpjb25zdW1lcjItaWRlbnRpdHlodWIlM0E3MDgzOmNvbnN1bWVyMg==",
                 "id": "consumer-credentialservice-1"
              },
              {
