@@ -68,5 +68,80 @@
 		}
 	  ]
 	}
+  ],
+  "variable": [
+	{
+	  "key": "HOST",
+	  "value": "http://localhost:8081",
+	  "type": "string"
+	},
+	{
+	  "key": "PROVIDER_DSP",
+	  "value": "http://localhost:8092",
+	  "type": "string"
+	},
+	{
+	  "key": "PROVIDER_ID",
+	  "value": "did:web:localhost%3A7093",
+	  "type": "string"
+	},
+	{
+	  "key": "CS_URL",
+	  "value": "http://localhost:8181",
+	  "type": "string"
+	},
+	{
+	  "key": "ISSUER_ADMIN_URL",
+	  "value": "http://localhost:10013",
+	  "type": "string"
+	},
+	{
+	  "key": "IH_API_TOKEN",
+	  "value": "c3VwZXItdXNlcg==.c3VwZXItc2VjcmV0LWtleQo=",
+	  "type": "string"
+	},
+	{
+	  "key": "ISSUER_ADMIN_API_TOKEN",
+	  "value": "c3VwZXItdXNlcg==.c3VwZXItc2VjcmV0LWtleQo=",
+	  "type": "string"
+	},
+	{
+	  "key": "PARTICIPANT_ID",
+	  "value": "super-user"
+	},
+	{
+	  "key": "DID",
+	  "value": "did:web:super-user"
+	},
+	{
+	  "key": "NEW_PARTICIPANT_ID",
+	  "value": "did:web:localhost%3A7083",
+	  "type": "string"
+	},
+	{
+	  "key": "CATALOG_URL",
+	  "value": "http://localhost:8084",
+	  "type": "string"
+	},
+	{
+	  "key": "TED_DSP_URL",
+	  "value": "",
+	  "type": "string"
+	},
+	{
+	  "key": "ISSUER_CONTEXT_ID",
+	  "value": "ZGlkOndlYjpsb2NhbGhvc3QlM0ExMDEwMA==",
+	  "type": "string"
+	},
+	{
+	  "key": "ISSUER_DID",
+	  "value": "did:web:localhost%3A10100",
+	  "type": "string"
+	},
+	{
+	  "key": "PARTICIPANT_ID_BASE64",
+	  "value": "ZGlkOndlYjpsb2NhbGhvc3QlM0E3MDgz",
+	  "type": "string"
+	}
   ]
 }
